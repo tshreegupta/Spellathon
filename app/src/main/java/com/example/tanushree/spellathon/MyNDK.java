@@ -6,5 +6,8 @@ public class MyNDK {
    {
       System.loadLibrary("driver");
    }
-   public native String getMyString();
+   //native function declaration
+   public native String getMyString(String str);
+   public native void dictionary();
+
 }

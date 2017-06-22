@@ -3,9 +3,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+//#include <jni.h>
 #include <fstream>
 using namespace std;
-
+#include <android/log.h>
 #define MAXLEN 7
 #include <stdbool.h>
 
@@ -128,10 +129,11 @@ string sortedPermutations(char str[])
 {
     // Get size of string
     int size = strlen(str);
-
+    return "abhi";
     // Sort the string in increasing order
     qsort(str, size, sizeof( str[0] ), compare);
-
+    if(T==NULL)
+    __android_log_print(ANDROID_LOG_ERROR, "TRACKERS", "Tree not found"); //TODO: include more logs
     // Print permutations one by one
     bool isFinished = false;
     while (!isFinished)
@@ -173,10 +175,20 @@ string sortedPermutations(char str[])
 
 string solve(string s)
 {
-	ifstream input("/sdcard/spellathon_dict/words_eng.txt");
+    char *str = new char[100];
+    int i=0;
+    do{
+     	str[i] = tolower(s[i]);
+    }while(str[i++]!='\0');
+    s = sortedPermutations(str);
+    return s;
+}
+
+void train()
+{
+	ifstream input("words_eng.txt");
     string train_string;
-    if(!input.is_open())
-    return "sorry";
+
     while(input >> train_string)
     {
         int i=0;
@@ -187,26 +199,29 @@ string solve(string s)
         //cout<<"inserting : "<<str<<endl;
     	insert(T, str);
     }
-    char *str = new char[100];
-    int i=0;
-    do{
-     	str[i] = tolower(s[i]);
-    }while(str[i++]!='\0');
-    s = sortedPermutations(str);
-    return s;
 }
 /*
-int main1(int argc, char **argv)
+int main(int argc, char **argv)
 {
 	string s = argv[1];
-	return strlen(solve("aprovep"));
-    //cout<<solve(s);
+	train();
+    cout<<solve(s);
 	//sortedPermutations( s );
-    //cout<<endl<<"------------"<<endl;
-    //return 0;
+    cout<<endl<<"------------"<<endl;
+    return 0;
 }
 */
-JNIEXPORT jstring JNICALL Java_com_example_tanushree_spellathon_MyNDK_getMyString(JNIEnv * env, jobject,jobjectArray argc){
-   const char * s = solve("aprovep").c_str();
+JNIEXPORT jstring JNICALL Java_com_example_tanushree_spellathon_MyNDK_getMyString(JNIEnv *env, jobject, jstring str){
+   const char * chr =(*env).GetStringUTFChars(str,NULL);
+   if(chr==NULL)
+    return (*env).NewStringUTF("SOMETHING WRONG WITH YOUR CODE");
+   const char * s = solve(chr).c_str();
    return (*env).NewStringUTF(s);
+  }
+
+JNIEXPORT void JNICALL Java_com_example_tanushree_spellathon_MyNDK_dictionary
+  (JNIEnv *, jobject)
+  {
+      train();
+      return;
   }

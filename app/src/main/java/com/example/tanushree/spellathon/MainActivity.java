@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     EditText mjumble;
     TextView mprint;
     String result;
+    MyNDK myNDK =new MyNDK();
     private TextView mTextMessage;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -56,17 +57,15 @@ public class MainActivity extends AppCompatActivity {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         msolveit = (Button) findViewById(R.id.solveit);
         mprint  = (TextView) findViewById(R.id.result);
+        myNDK.dictionary();
 
         msolveit.setOnClickListener( new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                MyNDK myNDK =new MyNDK();
-                //Log.i("mytag",myNDK.getMyString());
                 result = mjumble.getText().toString();
-                mprint.setText(myNDK.getMyString().toString());
-                  // mprint.setText(result);
-                    mjumble.setText("");
+                mprint.setText(myNDK.getMyString(result).toString());
+                mjumble.setText("");
 
             }
         });

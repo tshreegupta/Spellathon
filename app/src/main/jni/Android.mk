@@ -3,5 +3,5 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE    := driver
 LOCAL_SRC_FILES := driver.cpp
-
+LOCAL_LDLIBS := -llog
 include $(BUILD_SHARED_LIBRARY)

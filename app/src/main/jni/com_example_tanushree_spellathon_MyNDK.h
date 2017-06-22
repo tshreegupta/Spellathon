@@ -10,10 +10,18 @@ extern "C" {
 /*
  * Class:     com_example_tanushree_spellathon_MyNDK
  * Method:    getMyString
- * Signature: ()Ljava/lang/String;
+ * Signature: (Ljava/lang/String;)Ljava/lang/String;
  */
 JNIEXPORT jstring JNICALL Java_com_example_tanushree_spellathon_MyNDK_getMyString
-  (JNIEnv *, jobject,jobjectArray);
+  (JNIEnv *, jobject, jstring);
+
+/*
+ * Class:     com_example_tanushree_spellathon_MyNDK
+ * Method:    dictionary
+ * Signature: ()V
+ */
+JNIEXPORT void JNICALL Java_com_example_tanushree_spellathon_MyNDK_dictionary
+  (JNIEnv *, jobject);
 
 #ifdef __cplusplus
 }

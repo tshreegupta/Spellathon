@@ -1,0 +1,287 @@
+--------- beginning of /dev/log/main
+D/PictureClock( 1090): newTime=03:24
+I/MiuiCursorController(16325): InsertionPointCursorController is hidden including all panels and handle
+I/MiuiCursorController(16325): InsertionPointCursorController show:[true, true, false, false]
+I/MiuiCursorController(16325): InsertionPointCursorController is shown with hidden panels and shown handle
+I/MiuiHandleView(16325): HandleView [0] is shown
+I/MiuiHandleView(16325): HandleView [0] handle updatePosition called from PositionListener:0x232
+I/MiuiHandleView(16325): HandleView [0] handle updatePosition called from PositionListener:0x232
+I/MiuiCursorController(16325): InsertionPointCursorController is hidden including all panels and handle
+--------- beginning of /dev/log/system
+W/ProcessStats(  936): Skipping unknown process pid 17156
+W/ProcessStats(  936): Skipping unknown process pid 17159
+I/MiuiCursorController(16325): InsertionPointCursorController is hidden including all panels and handle
+I/MiuiCursorController(16325): InsertionPointCursorController is hidden including all panels and handle
+I/MiuiCursorController(16325): InsertionPointCursorController is hidden including all panels and handle
+I/CastDatabase( 1429): Saving the database
+I/SQLiteCastStore( 1429): Saving 0 CastNetworkInfo instances, 0 CastDeviceInfo instances, 0 paired guest mode devices.
+E/SQLiteCastStore( 1429): End saving paired guest mode devices
+I/MiuiCursorController(16325): InsertionPointCursorController is hidden including all panels and handle
+I/MiuiCursorController(16325): InsertionPointCursorController is hidden including all panels and handle
+F/libc    (16325): Fatal signal 11 (SIGSEGV) at 0xdeadbaad (code=1), thread 16325 (hree.spellathon)
+I/DEBUG   (  254): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+I/DEBUG   (  254): Build fingerprint: 'Xiaomi/armani/armani:4.3/JLS36C/JHCMIBL56.0:user/release-keys'
+I/DEBUG   (  254): Revision: '0'
+I/DEBUG   (  254): pid: 16325, tid: 16325, name: hree.spellathon  >>> com.example.tanushree.spellathon <<<
+I/DEBUG   (  254): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr deadbaad
+I/DEBUG   (  254):     r0 00000027  r1 00000000  r2 00000008  r3 deadbaad
+I/DEBUG   (  254):     r4 00000000  r5 beadf2e4  r6 5f7822ac  r7 beadf310
+I/DEBUG   (  254):     r8 5f7a5818  r9 5e947804  sl 00000004  fp 5e948098
+I/DEBUG   (  254):     ip 00000001  sp beadf2e0  lr 4010f36b  pc 4010c8c4  cpsr 60000030
+I/DEBUG   (  254):     d0  74735f6369736162  d1  535f3a3a676e6972
+I/DEBUG   (  254):     d2  757274736e6f635f  d3  206c6c756e207463
+I/DEBUG   (  254):     d4  fe8000003f000001  d5  000122e800000000
+I/DEBUG   (  254):     d6  0000000000000000  d7  0000000080000000
+I/DEBUG   (  254):     d8  0000000000000000  d9  0000000000000000
+I/DEBUG   (  254):     d10 0000000000000000  d11 0000000000000000
+I/DEBUG   (  254):     d12 0000000000000000  d13 0000000000000000
+I/DEBUG   (  254):     d14 0000000000000000  d15 0000000000000000
+I/DEBUG   (  254):     d16 676f6c3a3a647473  d17 726f7272655f6369
+I/DEBUG   (  254):     d18 002e0065006c0070  d19 0075006e00610074
+I/DEBUG   (  254):     d20 0065007200680073  d21 00700073002e0065
+I/DEBUG   (  254):     d22 0061006c006c0065  d23 006e006f00680074
+I/DEBUG   (  254):     d24 0000000000000000  d25 0000000000000000
+I/DEBUG   (  254):     d26 0000000000000000  d27 0000000000000000
+I/DEBUG   (  254):     d28 3ff0000000000000  d29 0000000000000000
+I/DEBUG   (  254):     d30 0000000000000000  d31 0000000000000000
+I/DEBUG   (  254):     scr 68000012
+I/DEBUG   (  254): 
+I/DEBUG   (  254): backtrace:
+I/DEBUG   (  254):     #00  pc 0001e8c4  /system/lib/libc.so
+I/DEBUG   (  254):     #01  pc 0001c89c  /system/lib/libc.so (abort+4)
+I/DEBUG   (  254):     #02  pc 0003c033  /data/app-lib/com.example.tanushree.spellathon-1/libdriver.so (__gnu_cxx::__verbose_terminate_handler()+226)
+I/DEBUG   (  254): 
+I/DEBUG   (  254): stack:
+I/DEBUG   (  254):          beadf2a0  5e941cb8  /data/app-lib/com.example.tanushree.spellathon-1/libdriver.so
+I/DEBUG   (  254):          beadf2a4  4010f157  /system/lib/libc.so
+I/DEBUG   (  254):          beadf2a8  40136170  /system/lib/libc.so
+I/DEBUG   (  254):          beadf2ac  5ce99718  
+I/DEBUG   (  254):          beadf2b0  00000015  
+I/DEBUG   (  254):          beadf2b4  4010e34d  /system/lib/libc.so (__sflush+56)
+I/DEBUG   (  254):          beadf2b8  40136264  /system/lib/libc.so
+I/DEBUG   (  254):          beadf2bc  401361c4  /system/lib/libc.so
+I/DEBUG   (  254):          beadf2c0  00000000  
+I/DEBUG   (  254):          beadf2c4  4010f36b  /system/lib/libc.so (_fwalk+34)
+I/DEBUG   (  254):          beadf2c8  4010e615  /system/lib/libc.so (_cleanup)
+I/DEBUG   (  254):          beadf2cc  beadf2e4  [stack]
+I/DEBUG   (  254):          beadf2d0  5f7822ac  
+I/DEBUG   (  254):          beadf2d4  beadf310  [stack]
+I/DEBUG   (  254):          beadf2d8  df0027ad  
+I/DEBUG   (  254):          beadf2dc  00000000  
+I/DEBUG   (  254):     #00  beadf2e0  401361c4  /system/lib/libc.so
+I/DEBUG   (  254):          beadf2e4  fffffbdf  
+I/DEBUG   (  254):          beadf2e8  0000000a  
+I/DEBUG   (  254):          beadf2ec  00000000  
+I/DEBUG   (  254):          beadf2f0  401361c4  /system/lib/libc.so
+I/DEBUG   (  254):          beadf2f4  40139ea8  
+I/DEBUG   (  254):          beadf2f8  0000000a  
+I/DEBUG   (  254):          beadf2fc  4013611c  /system/lib/libc.so
+I/DEBUG   (  254):          beadf300  00000001  
+I/DEBUG   (  254):          beadf304  4010a8a0  /system/lib/libc.so (__pthread_clone)
+I/DEBUG   (  254):     #01  beadf308  00003fc5  
+I/DEBUG   (  254):          beadf30c  5e92e037  /data/app-lib/com.example.tanushree.spellathon-1/libdriver.so (__gnu_cxx::__verbose_terminate_handler()+230)
+I/DEBUG   (  254):     #02  beadf310  5e953fd8  
+I/DEBUG   (  254):          beadf314  00000000  
+I/DEBUG   (  254):          beadf318  5e953fd8  
+I/DEBUG   (  254):          beadf31c  5e953f80  
+I/DEBUG   (  254):          beadf320  00000001  
+I/DEBUG   (  254):          beadf324  beadf330  [stack]
+I/DEBUG   (  254):          beadf328  5e92d4c5  /data/app-lib/com.example.tanushree.spellathon-1/libdriver.so
+I/DEBUG   (  254):          beadf32c  5e929bcb  /data/app-lib/com.example.tanushree.spellathon-1/libdriver.so (__cxxabiv1::__terminate(void (*)())+6)
+I/DEBUG   (  254):          beadf330  beadf338  [stack]
+I/DEBUG   (  254):          beadf334  5e929c41  /data/app-lib/com.example.tanushree.spellathon-1/libdriver.so (__cxxabiv1::__unexpected(void (*)()))
+I/DEBUG   (  254):          beadf338  beadf340  [stack]
+I/DEBUG   (  254):          beadf33c  5e929d65  /data/app-lib/com.example.tanushree.spellathon-1/libdriver.so (__cxa_throw+124)
+I/DEBUG   (  254):          beadf340  ffffff04  
+I/DEBUG   (  254):          beadf344  5e947d2c  /data/app-lib/com.example.tanushree.spellathon-1/libdriver.so
+I/DEBUG   (  254):          beadf348  5e953fd8  
+I/DEBUG   (  254):          beadf34c  beadf36c  [stack]
+I/DEBUG   (  254): 
+I/DEBUG   (  254): memory near r5:
+I/DEBUG   (  254):     beadf2c4 4010f36b 4010e615 beadf2e4 5f7822ac  
+I/DEBUG   (  254):     beadf2d4 beadf310 df0027ad 00000000 401361c4  
+I/DEBUG   (  254):     beadf2e4 fffffbdf 0000000a 00000000 401361c4  
+I/DEBUG   (  254):     beadf2f4 40139ea8 0000000a 4013611c 00000001  
+I/DEBUG   (  254):     beadf304 4010a8a0 00003fc5 5e92e037 5e953fd8  
+I/DEBUG   (  254):     beadf314 00000000 5e953fd8 5e953f80 00000001  
+I/DEBUG   (  254):     beadf324 beadf330 5e92d4c5 5e929bcb beadf338  
+I/DEBUG   (  254):     beadf334 5e929c41 beadf340 5e929d65 ffffff04  
+I/DEBUG   (  254):     beadf344 5e947d2c 5e953fd8 beadf36c beadf360  
+I/DEBUG   (  254):     beadf354 5e941990 5e8fa1c1 5e9228af 00000006  
+I/DEBUG   (  254):     beadf364 00000005 40139148 5f7822ac 00000000  
+I/DEBUG   (  254):     beadf374 beadf3f0 beadf3c0 00000001 00000000  
+I/DEBUG   (  254):     beadf384 5e925957 00000000 00000000 beadf3f0  
+I/DEBUG   (  254):     beadf394 beadf3c0 beadf3e8 00000002 5e8fa1c1  
+I/DEBUG   (  254):     beadf3a4 5e925cfb 00000003 5f78a500 00000003  
+I/DEBUG   (  254):     beadf3b4 5e8fa2df 420a0610 beadf3f0 beadf410  
+I/DEBUG   (  254): 
+I/DEBUG   (  254): memory near r6:
+I/DEBUG   (  254):     5f78228c 00000004 ffffffff 6f736567 6e617400  
+I/DEBUG   (  254):     5f78229c 00000043 00000029 00000029 00000000  
+I/DEBUG   (  254):     5f7822ac 69736162 74735f63 676e6972 535f3a3a  
+I/DEBUG   (  254):     5f7822bc 6e6f635f 75727473 6e207463 206c6c75  
+I/DEBUG   (  254):     5f7822cc 20746f6e 696c6176 00720064 00000040  
+I/DEBUG   (  254):     5f7822dc 0000003b 00000001 00000020 5ce98180  
+I/DEBUG   (  254):     5f7822ec 00000000 5e4ce978 5f79b2b0 5e96aca8  
+I/DEBUG   (  254):     5f7822fc 5f782288 00000001 5f782308 00000017  
+I/DEBUG   (  254):     5f78230c 00000001 5f782314 0000002b 00000001  
+I/DEBUG   (  254):     5f78231c 00000010 00000000 00000000 5f79b2b0  
+I/DEBUG   (  254):     5f78232c 5e9540b0 00000000 00000000 00000000  
+I/DEBUG   (  254):     5f78233c 0000016b 41776ea8 00000000 00000000  
+I/DEBUG   (  254):     5f78234c 00000007 00000004 41776ea8 00000000  
+I/DEBUG   (  254):     5f78235c 00000000 00000007 00000004 41776ef0  
+I/DEBUG   (  254):     5f78236c 00000000 00000000 00000007 00000004  
+I/DEBUG   (  254):     5f78237c 41776f38 5f781f60 00000001 00000007  
+I/DEBUG   (  254): 
+I/DEBUG   (  254): memory near r7:
+I/DEBUG   (  254):     beadf2f0 401361c4 40139ea8 0000000a 4013611c  
+I/DEBUG   (  254):     beadf300 00000001 4010a8a0 00003fc5 5e92e037  
+I/DEBUG   (  254):     beadf310 5e953fd8 00000000 5e953fd8 5e953f80  
+I/DEBUG   (  254):     beadf320 00000001 beadf330 5e92d4c5 5e929bcb  
+I/DEBUG   (  254):     beadf330 beadf338 5e929c41 beadf340 5e929d65  
+I/DEBUG   (  254):     beadf340 ffffff04 5e947d2c 5e953fd8 beadf36c  
+I/DEBUG   (  254):     beadf350 beadf360 5e941990 5e8fa1c1 5e9228af  
+I/DEBUG   (  254):     beadf360 00000006 00000005 40139148 5f7822ac  
+I/DEBUG   (  254):     beadf370 00000000 beadf3f0 beadf3c0 00000001  
+I/DEBUG   (  254):     beadf380 00000000 5e925957 00000000 00000000  
+I/DEBUG   (  254):     beadf390 beadf3f0 beadf3c0 beadf3e8 00000002  
+I/DEBUG   (  254):     beadf3a0 5e8fa1c1 5e925cfb 00000003 5f78a500  
+I/DEBUG   (  254):     beadf3b0 00000003 5e8fa2df 420a0610 beadf3f0  
+I/DEBUG   (  254):     beadf3c0 beadf410 beadf420 22f39ac7 beadf420  
+I/DEBUG   (  254):     beadf3d0 beadf41c 420a0620 beadf454 5f782294  
+I/DEBUG   (  254):     beadf3e0 beadf3f0 5f78a500 beadf410 5e8fa363  
+I/DEBUG   (  254): 
+I/DEBUG   (  254): memory near r8:
+I/DEBUG   (  254):     5f7a57f8 00000000 ffffffee 00000000 00000000  
+I/DEBUG   (  254):     5f7a5808 5f7a62b0 00000000 3f800000 00000039  
+I/DEBUG   (  254):     5f7a5818 3a647473 676f6c3a 655f6369 726f7272  
+I/DEBUG   (  254):     5f7a5828 62616e00 00000021 676e6972 6c697542  
+I/DEBUG   (  254):     5f7a5838 00726564 00000011 5f9162c8 40139148  
+I/DEBUG   (  254):     5f7a5848 00000038 0000002a 404f5030 00000004  
+I/DEBUG   (  254):     5f7a5858 ffbbbcbc 00000005 ffbcbcbb 403a4ff8  
+I/DEBUG   (  254):     5f7a5868 403a5990 65636e00 00000028 00000073  
+I/DEBUG   (  254):     5f7a5878 5f7579cc 00000400 00000200 00000800  
+I/DEBUG   (  254):     5f7a5888 00000200 41776ca0 5f7a6fc0 00000004  
+I/DEBUG   (  254):     5f7a5898 00000007 00000004 5f7a1778 5f7a5378  
+I/DEBUG   (  254):     5f7a58a8 00000000 5f8e6944 5f8e69c4 00000000  
+I/DEBUG   (  254):     5f7a58b8 00000000 5f7a62b0 00000000 00000002  
+I/DEBUG   (  254):     5f7a58c8 beadf0c0 00000000 00000000 00000101  
+I/DEBUG   (  254):     5f7a58d8 00000000 00000000 00000000 0000009b  
+I/DEBUG   (  254):     5f7a58e8 5f7a5878 00000001 41c00000 00000000  
+I/DEBUG   (  254): 
+I/DEBUG   (  254): memory near r9:
+I/DEBUG   (  254):     5e9477e4 5e947828 5e92d77d 5e92dc21 5e92d4bd  
+I/DEBUG   (  254):     5e9477f4 00000000 5e947368 5e943660 5e9478c8  
+I/DEBUG   (  254):     5e947804 5e947368 5e943640 5e9472b4 00000000  
+I/DEBUG   (  254):     5e947814 5e947788 5e92d709 5e92db31 5e92d4bd  
+I/DEBUG   (  254):     5e947824 00000000 5e947368 5e943674 5e947804  
+I/DEBUG   (  254):     5e947834 5e947368 5e94362c 5e947804 5e947368  
+I/DEBUG   (  254):     5e947844 5e943650 5e9478c8 5e947368 5e94369c  
+I/DEBUG   (  254):     5e947854 5e9478c8 5e947368 5e943688 5e947804  
+I/DEBUG   (  254):     5e947864 00000000 00000000 5e947804 5e92d4c5  
+I/DEBUG   (  254):     5e947874 5e92dab9 5e92d4bd 00000000 00000000  
+I/DEBUG   (  254):     5e947884 5e947834 5e92d865 5e92dba9 5e92d4bd  
+I/DEBUG   (  254):     5e947894 00000000 00000000 5e947858 5e92d7f1  
+I/DEBUG   (  254):     5e9478a4 5e92dc99 5e92d4bd 00000000 00000000  
+I/DEBUG   (  254):     5e9478b4 5e947840 5e92d695 5e92d9c9 5e92d4c1  
+I/DEBUG   (  254):     5e9478c4 00000000 5e947368 5e943600 5e9472b4  
+I/DEBUG   (  254):     5e9478d4 00000000 00000000 5e9478f0 5e92deb5  
+I/DEBUG   (  254): 
+I/DEBUG   (  254): memory near fp:
+I/DEBUG   (  254):     5e948078 5e9425b0 5e942620 5e947128 5e945d40  
+I/DEBUG   (  254):     5e948088 5e945d68 5e929c35 00000001 5e92df51  
+I/DEBUG   (  254):     5e948098 5e4ca8e0 00000000 00000001 00000001  
+I/DEBUG   (  254):     5e9480a8 00000001 00000001 00000001 00000001  
+I/DEBUG   (  254):     5e9480b8 00000001 00000001 00000001 00000001  
+I/DEBUG   (  254):     5e9480c8 00000001 00000001 00000006 0000000e  
+I/DEBUG   (  254):     5e9480d8 0000000c 0000000d 0000000b 00000005  
+I/DEBUG   (  254):     5e9480e8 00000004 00000003 0000000a 00000009  
+I/DEBUG   (  254):     5e9480f8 00000008 00000007 0000001c 00000000  
+I/DEBUG   (  254):     5e948108 00000000 00000000 00000002 5e948794  
+I/DEBUG   (  254):     5e948118 5e948794 00000002 5e9455d0 00000002  
+I/DEBUG   (  254):     5e948128 00000000 5e9457e8 00000001 5e94135e  
+I/DEBUG   (  254):     5e948138 00000000 002c2e00 5e94135e 00000000  
+I/DEBUG   (  254):     5e948148 5e94135e 00000000 5e94135e 00000000  
+I/DEBUG   (  254):     5e948158 00000000 04000302 04000302 3231302d  
+I/DEBUG   (  254):     5e948168 36353433 00393837 5e945ab0 00000002  
+I/DEBUG   (  254): 
+I/DEBUG   (  254): memory near sp:
+I/DEBUG   (  254):     beadf2c0 00000000 4010f36b 4010e615 beadf2e4  
+I/DEBUG   (  254):     beadf2d0 5f7822ac beadf310 df0027ad 00000000  
+I/DEBUG   (  254):     beadf2e0 401361c4 fffffbdf 0000000a 00000000  
+I/DEBUG   (  254):     beadf2f0 401361c4 40139ea8 0000000a 4013611c  
+I/DEBUG   (  254):     beadf300 00000001 4010a8a0 00003fc5 5e92e037  
+I/DEBUG   (  254):     beadf310 5e953fd8 00000000 5e953fd8 5e953f80  
+I/DEBUG   (  254):     beadf320 00000001 beadf330 5e92d4c5 5e929bcb  
+I/DEBUG   (  254):     beadf330 beadf338 5e929c41 beadf340 5e929d65  
+I/DEBUG   (  254):     beadf340 ffffff04 5e947d2c 5e953fd8 beadf36c  
+I/DEBUG   (  254):     beadf350 beadf360 5e941990 5e8fa1c1 5e9228af  
+I/DEBUG   (  254):     beadf360 00000006 00000005 40139148 5f7822ac  
+I/DEBUG   (  254):     beadf370 00000000 beadf3f0 beadf3c0 00000001  
+I/DEBUG   (  254):     beadf380 00000000 5e925957 00000000 00000000  
+I/DEBUG   (  254):     beadf390 beadf3f0 beadf3c0 beadf3e8 00000002  
+I/DEBUG   (  254):     beadf3a0 5e8fa1c1 5e925cfb 00000003 5f78a500  
+I/DEBUG   (  254):     beadf3b0 00000003 5e8fa2df 420a0610 beadf3f0  
+I/DEBUG   (  254): 
+I/DEBUG   (  254): code around pc:
+I/DEBUG   (  254):     4010c8a4 461ce00b 2b006823 e026d1fb b12468e4  
+I/DEBUG   (  254):     4010c8b4 21014a18 6011447a 4b1247a0 24002027  
+I/DEBUG   (  254):     4010c8c4 f7fc7018 2106edc4 e870f7fe 5180f04f  
+I/DEBUG   (  254):     4010c8d4 a9029104 94022006 9403460a ec1cf7fd  
+I/DEBUG   (  254):     4010c8e4 46224629 f7fd2002 f7fcec28 2106edb0  
+I/DEBUG   (  254):     4010c8f4 e85cf7fe f7fc2001 6960ea5c d1dc2800  
+I/DEBUG   (  254):     4010c904 bf00e7d4 deadbaad 00029754 ffffff9c  
+I/DEBUG   (  254):     4010c914 0002cb00 0002cae4 2400b510 aa04b088  
+I/DEBUG   (  254):     4010c924 46699002 94014620 94039400 eb34f7fd  
+I/DEBUG   (  254):     4010c934 db0642a0 b1139b07 1c419806 98069106  
+I/DEBUG   (  254):     4010c944 4620e000 bd10b008 4b1eb40e b082b5f0  
+I/DEBUG   (  254):     4010c954 447b491d f107af00 585e021c f8522101  
+I/DEBUG   (  254):     4010c964 68354b04 f852607d 31015b04 d1fa2d00  
+I/DEBUG   (  254):     4010c974 320e008a 0507f022 0220f107 0d05ebad  
+I/DEBUG   (  254):     4010c984 f107603a 46690224 9400466d 4c04f852  
+I/DEBUG   (  254):     4010c994 f8453204 2c004f04 f8dfd1f8 f853c030  
+I/DEBUG   (  254): 
+I/DEBUG   (  254): code around lr:
+I/DEBUG   (  254):     4010f348 4a0e4b0d e92d447b 260041f0 4680589c  
+I/DEBUG   (  254):     4010f358 686768a5 f9b5e007 2b00300c 4628dd02  
+I/DEBUG   (  254):     4010f368 430647c0 3f013554 6824d5f5 d1ef2c00  
+I/DEBUG   (  254):     4010f378 e8bd4630 bf0081f0 00026c88 ffffffc4  
+I/DEBUG   (  254):     4010f388 43f0e92d fb01461e 4b16f502 4916460f  
+I/DEBUG   (  254):     4010f398 447bb087 aa014614 20019001 95029203  
+I/DEBUG   (  254):     4010f3a8 90049505 681a585b b1124698 f0094630  
+I/DEBUG   (  254):     4010f3b8 4630fd26 f7ffa903 4681fe9c 0000f8d8  
+I/DEBUG   (  254):     4010f3c8 4630b110 fd28f009 0f00f1b9 9c05d005  
+I/DEBUG   (  254):     4010f3d8 1b284639 eab2f017 46204604 e8bdb007  
+I/DEBUG   (  254):     4010f3e8 bf0083f0 00026c3a ffffff60 46036842  
+I/DEBUG   (  254):     4010f3f8 60411e51 da012900 bb9ef000 f8126802  
+I/DEBUG   (  254):     4010f408 601a0b01 00004770 4a104b0f b570447b  
+I/DEBUG   (  254):     4010f418 589b4604 461e6819 f009b109 6860fcf0  
+I/DEBUG   (  254):     4010f428 60651e45 da042d00 f0004620 4605fb85  
+I/DEBUG   (  254):     4010f438 6822e003 5b01f812 68336022 4620b113  
+I/DEBUG   (  254): 
+I/DEBUG   (  254): memory map around fault addr deadbaad:
+I/DEBUG   (  254):     beabf000-beae0000 rw- [stack]
+I/DEBUG   (  254):     (no map for address)
+I/DEBUG   (  254):     ffff0000-ffff1000 r-x [vectors]
+D/NativeCrashListener(  936): Closing socket connection: FileDescriptor[234]
+I/BootReceiver(  936): Copying /data/tombstones/tombstone_09 to DropBox (SYSTEM_TOMBSTONE)
+W/InputDispatcher(  936): channel '4245b738 com.example.tanushree.spellathon/com.example.tanushree.spellathon.MainActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  936): channel '4245b738 com.example.tanushree.spellathon/com.example.tanushree.spellathon.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+D/Zygote  (  257): Process 16325 terminated by signal (11)
+D/dalvikvm(  936): GC_FOR_ALLOC freed 5213K, 31% free 25314K/36244K, paused 92ms, total 92ms
+W/InputDispatcher(  936): Attempted to unregister already unregistered input channel '4245b738 com.example.tanushree.spellathon/com.example.tanushree.spellathon.MainActivity (server)'
+I/WindowState(  936): WIN DEATH: Window{4245b738 u0 com.example.tanushree.spellathon/com.example.tanushree.spellathon.MainActivity}
+I/ActivityManager(  936): Process com.example.tanushree.spellathon (pid 16325) has died.
+W/ActivityManager(  936): Force removing ActivityRecord{424284a0 u0 com.example.tanushree.spellathon/.MainActivity}: app died, no saved state
+I/RenderThread( 1358): RenderThread resumed
+I/RenderThread( 1358): RenderThread paused, waiting for signal
+D/PhoneStatusBar( 1090): disable: < expand icons ALERTS ticker system_info back home recent clock >
+V/PhoneStatusBar( 1090): setLightsOn(true)
+D/dalvikvm(  936): GC_CONCURRENT freed 262K, 31% free 25322K/36244K, paused 5ms+11ms, total 122ms
+W/System.err( 1255): java.lang.NullPointerException
+W/System.err( 1255): 	at android.inputmethodservice.IInputMethodWrapper.setSessionEnabled(IInputMethodWrapper.java:280)
+W/System.err( 1255): 	at com.android.internal.view.IInputMethod$Stub.onTransact(IInputMethod.java:129)
+W/System.err( 1255): 	at android.os.Binder.execTransact(Binder.java:388)
+W/InputMethodManagerService(  936): Got RemoteException sending setActive(false) notification to pid 16325 uid 10071
+W/System.err( 1255): 	at dalvik.system.NativeStart.run(Native Method)
+I/native  ( 1255): neural_language_identifier.cc:218 Running NeuralLanguageIdentifier on text with size: 5 bytes.
